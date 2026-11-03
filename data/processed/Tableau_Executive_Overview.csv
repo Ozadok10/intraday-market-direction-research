@@ -1,0 +1,7 @@
+﻿ticker,research_period,checkpoint_observations,qualifying_signals,continuations,reversions,flat_outcomes,directional_outcomes,continuation_pct_excluding_flat,reversion_pct_excluding_flat,signal_rate_pct
+QQQ,discovery_2008_2019,17946,3553,1787,1690,76,3477,51.395,48.605,19.798
+QQQ,holdout_2024_2026,4080,828,421,406,1,827,50.907,49.093,20.294
+QQQ,validation_2020_2023,5994,1748,902,838,8,1740,51.839,48.161,29.162
+SPY,discovery_2008_2019,17952,2490,1219,1248,23,2467,49.412,50.588,13.87
+SPY,holdout_2024_2026,4092,438,231,204,3,435,53.103,46.897,10.704
+SPY,validation_2020_2023,5982,1069,563,502,4,1065,52.864,47.136,17.87

@@ -1,0 +1,362 @@
+{
+  "database_source": "Intraday Momentum vs Reversion Reaserch/Final Porject/SQL_Database/Intraday_Direction_Research_v1.db",
+  "quick_check": "ok",
+  "objects": [
+    {
+      "table": "discovery_observations",
+      "rows": 35898,
+      "columns": [
+        "row_id",
+        "ticker",
+        "session_date",
+        "checkpoint_et",
+        "session_group",
+        "sample_period",
+        "lookback_return_pct",
+        "forward_return_pct",
+        "signed_forward_return_pct",
+        "signal",
+        "continuation",
+        "reversal",
+        "entry_open",
+        "exit_close",
+        "volume_eligible"
+      ]
+    },
+    {
+      "table": "earnings_month_overall",
+      "rows": 12,
+      "columns": [
+        "row_id",
+        "ticker",
+        "sample_period",
+        "month_group",
+        "qualifying_signals",
+        "continuations",
+        "reversions",
+        "flat",
+        "continuation_pct",
+        "avg_signed_move_pct",
+        "binomial_p_unadjusted"
+      ]
+    },
+    {
+      "table": "holdout_observations",
+      "rows": 8172,
+      "columns": [
+        "row_id",
+        "ticker",
+        "session_date",
+        "checkpoint_et",
+        "session_group",
+        "lookback_return_pct",
+        "forward_return_pct",
+        "signed_forward_return_pct",
+        "signal",
+        "continuation",
+        "reversal",
+        "volume_eligible"
+      ]
+    },
+    {
+      "table": "monthly_by_checkpoint",
+      "rows": 432,
+      "columns": [
+        "row_id",
+        "ticker",
+        "sample_period",
+        "month",
+        "checkpoint_et",
+        "checkpoint_observations",
+        "qualifying_signals",
+        "continuations",
+        "reversions",
+        "flat",
+        "continuation_pct",
+        "reversion_pct",
+        "mean_signed_forward_pct",
+        "median_signed_forward_pct",
+        "continuation_mean_pct",
+        "reversion_mean_pct",
+        "binomial_p_unadjusted",
+        "mean_p_unadjusted"
+      ]
+    },
+    {
+      "table": "monthly_overall",
+      "rows": 72,
+      "columns": [
+        "row_id",
+        "ticker",
+        "sample_period",
+        "month",
+        "checkpoint_observations",
+        "qualifying_signals",
+        "continuations",
+        "reversions",
+        "flat",
+        "continuation_pct",
+        "reversion_pct",
+        "mean_signed_forward_pct",
+        "median_signed_forward_pct",
+        "continuation_mean_pct",
+        "reversion_mean_pct",
+        "binomial_p_unadjusted",
+        "mean_p_unadjusted"
+      ]
+    },
+    {
+      "table": "move_size_overall",
+      "rows": 8,
+      "columns": [
+        "row_id",
+        "ticker",
+        "move_size_band",
+        "observations",
+        "continuations",
+        "reversions",
+        "flat",
+        "continuation_pct",
+        "mean_signed_forward_pct",
+        "median_signed_forward_pct",
+        "binomial_p_value"
+      ]
+    },
+    {
+      "table": "multivariable_predictions",
+      "rows": 1308,
+      "columns": [
+        "row_id",
+        "ticker",
+        "session_date",
+        "checkpoint_et",
+        "signal",
+        "signed_forward_return_pct",
+        "year",
+        "y",
+        "pred_continuation_probability",
+        "pred_label",
+        "pred_correct"
+      ]
+    },
+    {
+      "table": "multivariable_summary",
+      "rows": 2,
+      "columns": [
+        "row_id",
+        "ticker",
+        "train_start",
+        "train_end",
+        "test_start",
+        "test_end",
+        "train_n",
+        "test_n",
+        "train_continuation_pct",
+        "test_continuation_pct",
+        "model_correct",
+        "model_accuracy_pct",
+        "majority_baseline_correct",
+        "majority_baseline_accuracy_pct",
+        "model_minus_baseline_pp",
+        "model_auc",
+        "model_brier",
+        "model_log_loss",
+        "confident_60_n",
+        "confident_60_correct",
+        "confident_60_accuracy_pct",
+        "model_binomial_p_vs_50_unadjusted"
+      ]
+    },
+    {
+      "table": "quarterly_by_checkpoint",
+      "rows": 144,
+      "columns": [
+        "row_id",
+        "ticker",
+        "sample_period",
+        "quarter",
+        "checkpoint_et",
+        "checkpoint_observations",
+        "qualifying_signals",
+        "continuations",
+        "reversions",
+        "flat",
+        "continuation_pct",
+        "reversion_pct",
+        "mean_signed_forward_pct",
+        "median_signed_forward_pct",
+        "continuation_mean_pct",
+        "reversion_mean_pct",
+        "binomial_p_unadjusted",
+        "mean_p_unadjusted"
+      ]
+    },
+    {
+      "table": "quarterly_overall",
+      "rows": 24,
+      "columns": [
+        "row_id",
+        "ticker",
+        "sample_period",
+        "quarter",
+        "checkpoint_observations",
+        "qualifying_signals",
+        "continuations",
+        "reversions",
+        "flat",
+        "continuation_pct",
+        "reversion_pct",
+        "mean_signed_forward_pct",
+        "median_signed_forward_pct",
+        "continuation_mean_pct",
+        "reversion_mean_pct",
+        "binomial_p_unadjusted",
+        "mean_p_unadjusted"
+      ]
+    },
+    {
+      "table": "relative_volume_events",
+      "rows": 5930,
+      "columns": [
+        "row_id",
+        "ticker",
+        "session_date",
+        "checkpoint_et",
+        "signal",
+        "lookback_return_pct",
+        "prior_30m_volume",
+        "prior_20_session_avg_volume",
+        "relative_volume_30m",
+        "volume_band",
+        "signed_forward_return_pct",
+        "continuation",
+        "reversal"
+      ]
+    },
+    {
+      "table": "source_manifest",
+      "rows": 17,
+      "columns": [
+        "table_name",
+        "source_csv",
+        "row_count"
+      ]
+    },
+    {
+      "table": "validation_observations",
+      "rows": 11976,
+      "columns": [
+        "row_id",
+        "ticker",
+        "session_date",
+        "checkpoint_et",
+        "session_group",
+        "lookback_return_pct",
+        "forward_return_pct",
+        "signed_forward_return_pct",
+        "signal",
+        "continuation",
+        "reversal",
+        "volume_eligible"
+      ]
+    },
+    {
+      "table": "volatility_audit",
+      "rows": 6,
+      "columns": [
+        "row_id",
+        "ticker",
+        "volatility_band",
+        "all_observations",
+        "all_observations_pct",
+        "qualifying_signals",
+        "qualifying_signals_pct",
+        "signal_rate_in_band_pct"
+      ]
+    },
+    {
+      "table": "volatility_events",
+      "rows": 6043,
+      "columns": [
+        "row_id",
+        "ticker",
+        "session_date",
+        "checkpoint_et",
+        "signal",
+        "lookback_return_pct",
+        "realized_volatility_30m_pct",
+        "volatility_band",
+        "band_low_upper_pct",
+        "band_medium_upper_pct",
+        "signed_forward_return_pct",
+        "continuation",
+        "reversal"
+      ]
+    },
+    {
+      "table": "volume_profile_events",
+      "rows": 6032,
+      "columns": [
+        "row_id",
+        "ticker",
+        "session_date",
+        "checkpoint_et",
+        "signal",
+        "lookback_return_pct",
+        "checkpoint_previous_close",
+        "developing_poc",
+        "developing_val",
+        "developing_vah",
+        "value_area_volume_pct",
+        "signed_poc_distance_pct",
+        "poc_side",
+        "profile_position_band",
+        "signed_forward_return_pct",
+        "continuation",
+        "reversal"
+      ]
+    },
+    {
+      "table": "volume_profile_validation_events",
+      "rows": 1729,
+      "columns": [
+        "row_id",
+        "ticker",
+        "session_date",
+        "checkpoint_et",
+        "signal",
+        "lookback_return_pct",
+        "checkpoint_previous_close",
+        "developing_poc",
+        "developing_val",
+        "developing_vah",
+        "value_area_volume_pct",
+        "signed_poc_distance_pct",
+        "poc_side",
+        "profile_position_band",
+        "signed_forward_return_pct",
+        "continuation",
+        "reversal"
+      ]
+    },
+    {
+      "table": "vwap_events",
+      "rows": 6032,
+      "columns": [
+        "row_id",
+        "ticker",
+        "session_date",
+        "checkpoint_et",
+        "signal",
+        "lookback_return_pct",
+        "vwap_at_checkpoint",
+        "checkpoint_previous_close",
+        "signed_vwap_distance_pct",
+        "vwap_position_band",
+        "signed_forward_return_pct",
+        "continuation",
+        "reversal"
+      ]
+    }
+  ]
+}
